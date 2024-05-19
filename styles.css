@@ -1,0 +1,109 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background: rgba(58, 58, 61, 0.738);
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#search {
+    margin-bottom: 20px;
+}
+
+#search input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#search button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.location {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298); 
+}
+
+#currentWeather {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+}
+
+.hour, .day, .info-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.info-item h3 {
+    margin: 0 0 10px;
+}
+
+body.sunny {
+    background: linear-gradient(to bottom, #f7b733, #fc4a1a);
+}
+
+body.clear {
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+}
+body.cloudy {
+    background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+}
+body.cloudy {
+    background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+}
+
+body.rainy {
+    background: linear-gradient(to bottom, #00c6ff, #0072ff);
+}
+
+body.night {
+    background: linear-gradient(to bottom, #1d2c47, #253b55);
+}
